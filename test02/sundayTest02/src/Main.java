@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 public class Main {
     public static void main(String[] args) {
 
-        var url = "https://api.nationalize.io/?name=nathaniel";
+        var url = "https://api.chucknorris.io/jokes/random";
 
         var request = HttpRequest.newBuilder().GET().uri(URI.create(url)).build();
         var client = HttpClient.newBuilder().build();
